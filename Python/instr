@@ -1,0 +1,95 @@
+student@asgard:~/Desktop/raluca$ echo "# OSSS" >> README.md
+student@asgard:~/Desktop/raluca$ git init
+Initialized empty Git repository in /home/student/Desktop/OSSS/.git/
+student@asgard:~/Desktop/raluca$ git add README.md
+student@asgard:~/Desktop/raluca$ git commit -m "Python"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@asgard.(none)')
+student@asgard:~/Desktop/raluca$ git config --global user.email raluca.caciula@gmail.com
+student@asgard:~/Desktop/raluca$ git config --global user.name Raluca Caciula
+student@asgard:~/Desktop/raluca$ git commit -m "Python"
+[master (root-commit) 947e90d] Python
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+student@asgard:~/Desktop/raluca$ git remote add origin https://github.com/ralucaRLC/OSSS.git
+student@asgard:~/Desktop/raluca$ git push -u origin master
+Username for 'https://github.com': Raluca Caciula
+Password for 'https://Raluca Caciula@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ralucaRLC/OSSS.git/'
+student@asgard:~/Desktop/raluca$ git push -u origin master
+Username for 'https://github.com': raluca.caciula
+Password for 'https://raluca.caciula@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ralucaRLC/OSSS.git/'
+student@asgard:~/Desktop/raluca$ git push -u origin master
+Username for 'https://github.com': ralucaRLC
+Password for 'https://ralucaRLC@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 218 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ralucaRLC/OSSS.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+student@asgard:~/Desktop/raluca$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app.py
+	catalog.txt
+	countLinesInFile.py
+	countLinesInFile.pyc
+	count_lines_in_file.py~
+	exercitiu.py
+	start.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@asgard:~/Desktop/raluca$ git add exercitiu.py 
+student@asgard:~/Desktop/raluca$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   exercitiu.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app.py
+	catalog.txt
+	countLinesInFile.py
+	countLinesInFile.pyc
+	count_lines_in_file.py~
+	start.py
+
+student@asgard:~/Desktop/raluca$ git commit -m "Python -> max si min"
+[master fe1eddf] Python -> max si min
+ 1 file changed, 46 insertions(+)
+ create mode 100644 exercitiu.py
+student@asgard:~/Desktop/raluca$ git push origin master
+Username for 'https://github.com': ralucaRLC
+Password for 'https://ralucaRLC@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 707 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ralucaRLC/OSSS.git
+   947e90d..fe1eddf  master -> master
+student@asgard:~/Desktop/raluca$ 
+
